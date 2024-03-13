@@ -41,6 +41,12 @@ generate-splash:
 	flutter pub get && flutter pub run flutter_native_splash:create
 generate-icon:
 	flutter pub get && flutter pub run flutter_launcher_icons
+
+generate-icons:
+	flutter pub get && flutter pub run flutter_launcher_icons -f flutter_launcher_icons-development.yaml
+	flutter pub get && flutter pub run flutter_launcher_icons -f flutter_launcher_icons-production.yaml
+	flutter pub get && flutter pub run flutter_launcher_icons -f flutter_launcher_icons-staging.yaml
+
 generate-two:
 	dart run build_runner build --build-filter="lib/features/posts/models/post_model.freezed.dart"
 	dart run build_runner build --build-filter="lib/features/posts/models/post_model.g.dart"
