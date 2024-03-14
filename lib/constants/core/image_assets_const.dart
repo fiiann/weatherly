@@ -1,0 +1,3 @@
+class ImageAssetsConst{
+  ImageAssetsConst._();
+}

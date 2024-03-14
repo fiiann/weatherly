@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:weatherly/app/app.dart';
-import 'package:weatherly/counter/counter.dart';
+import 'package:weatherly/app/features/counter/counter.dart';
 
 void main() {
   group('App', () {
